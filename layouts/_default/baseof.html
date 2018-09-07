@@ -1,0 +1,26 @@
+<!doctype html>
+<html class="no-js" lang="{{ .Site.LanguageCode }}">
+  <head>
+    <title></title>
+  </head>
+  <body>
+    {{ block "body" . }}
+      <pre>{{ .Permalink }}</pre>
+      <pre>.IsTranslated: {{ .IsTranslated }}</pre>
+    {{ end }}
+    <ul>
+      <li>
+        <a href="/">/ - Home English</a>
+      </li>
+      <li>
+        <a href="/fr">/fr - Home French (expected to get a 404)</a>
+      </li>
+      <li>
+        <a href="/subpage">/subpage - Subpage English</a>
+      </li>
+      <li>
+        <a href="/fr/subpage">/fr/subpage - Subpage French</a>
+      </li>
+    </ul>
+  </body>
+</html>

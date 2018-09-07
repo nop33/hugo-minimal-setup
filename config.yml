@@ -1,0 +1,11 @@
+baseURL: "http://example.org/"
+languageCode: "en-us"
+defaultContentLanguage: "en"
+title: "My New Hugo Site"
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+  fr:
+    languageName: "French"
+    weight: 2
